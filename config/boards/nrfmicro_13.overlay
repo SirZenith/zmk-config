@@ -5,9 +5,9 @@
 &spi0 {
 	status = "okay";
 	compatible = "nordic,nrf-spim";
-	sck-pin = <&gpio0 6 0>;
-	mosi-pin = <&gpio0 26 0>;
-	miso-pin = <&gpio0 10 0>;
+	sck-pin = <6>;
+	mosi-pin = <26>;
+	miso-pin = <10>;
 
 	cs-gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;
 
