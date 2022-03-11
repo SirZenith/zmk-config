@@ -15,10 +15,10 @@
         "&kp LALT",  "&kp Z",  "&kp X",  "&kp C",          "&kp V",     "&kp B",           "&kp N",      "&kp M",     "&kp COMMA", "&kp PERIOD",     "&kp SLASH", "&kp RIGHT_GUI",
                                          "&mo 1", "&kp LEFT_SHIFT", "&kp SPACE",           "&mo 2", "&kp RSHIFT", "&kp BACKSPACE"
     ], [
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-                                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans"
+        "&trans",       "&trans",       "&trans", "&kp BACKSLASH",    "&kp EQUAL",    "&kp MINUS",                  "&kp CARET",          "&kp AMPS",    "&kp ASTRK",     "&kp LPAR",     "&kp RPAR",   "&kp DEL",
+       "&kp ESC", "&kp NUMBER_1", "&kp NUMBER_2",  "&kp NUMBER_3", "&kp NUMBER_4", "&kp NUMBER_5",               "&kp NUMBER_6",      "&kp NUMBER_7", "&kp NUMBER_8", "&kp NUMBER_9", "&kp NUMBER_0", "&kp EQUAL",
+         "&mo 3",       "&kp F1",       "&kp F2",        "&kp F3",       "&kp F4",       "&kp F5",           "&kp SINGLE_QUOTE", "&kp DOUBLE_QUOTES",        "&none",        "&none",        "&none",   "&kp F11",
+                                                          "&none",     "&kp LALT",       "&trans",                     "&trans",          "&kp RALT",    "&kp SPACE"
     ], [
        "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
        "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
