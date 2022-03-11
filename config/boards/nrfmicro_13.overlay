@@ -5,11 +5,11 @@
 &spi0 {
 	status = "okay";
 	compatible = "nordic,nrf-spim";
-	sck-pin = <13>;
-	mosi-pin = <14>;
-	miso-pin = <11>;
+	sck-pin = <&gpio0 6 0>;
+	mosi-pin = <&gpio0 26 0>;
+	miso-pin = <&gpio0 10 0>;
 
-	cs-gpios = <&gpio0 21 GPIO_ACTIVE_LOW>;
+	cs-gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;
 
 	ssd16xxfb@0 {
 		compatible = "gooddisplay,il0323";
@@ -18,9 +18,9 @@
 		reg = <0>;
 		width = <80>;
 		height = <128>;
-		dc-gpios = <&gpio0 17 GPIO_ACTIVE_LOW>;
-		reset-gpios = <&gpio0 16 GPIO_ACTIVE_LOW>;
-		busy-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
+		dc-gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+		reset-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
+		busy-gpios = <&gpio0 28 GPIO_ACTIVE_LOW>;
 		cdi = <0xd2>;
 		tcon = <0x22>;
 		pwr = [03 00 26 26];
