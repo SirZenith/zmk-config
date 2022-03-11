@@ -20,10 +20,10 @@
          "&mo 3",       "&kp F1",       "&kp F2",        "&kp F3",       "&kp F4",       "&kp F5",           "&kp SINGLE_QUOTE", "&kp DOUBLE_QUOTES",        "&none",        "&none",        "&none",   "&kp F11",
                                                           "&none",     "&kp LALT",       "&trans",                     "&trans",          "&kp RALT",    "&kp SPACE"
     ], [
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-       "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
-                                     "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans"
+         "&kp ESC",     "&kp EXCL",       "&kp AT",     "&kp HASH",   "&kp DOLLAR",  "&kp PERCENT",              "&kp UNDER",     "&kp PLUS",     "&kp PIPE",        "&none",        "&none",  "&none",
+       "&kp GRAVE", "&kp NUMBER_1", "&kp NUMBER_2", "&kp NUMBER_3", "&kp NUMBER_4", "&kp NUMBER_5",           "&kp NUMBER_6", "&kp NUMBER_7", "&kp NUMBER_8", "&kp NUMBER_9", "&kp NUMBER_0",  "&none",
+         "&kp F12",       "&trans",     "&kp LBKT",     "&kp RBKT",     "&kp LBRC",     "&kp RBRC",                 "&kp F6",       "&kp F7",       "&kp F8",       "&kp F9",      "&kp F10",  "&mo 3",
+                                                           "&none",       "&trans",       "&trans",                 "&trans",       "&trans",       "&trans"
     ], [
        "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
        "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",           "&trans", "&trans", "&trans", "&trans", "&trans", "&trans",
