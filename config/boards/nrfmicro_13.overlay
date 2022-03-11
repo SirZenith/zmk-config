@@ -7,6 +7,7 @@
 	compatible = "nordic,nrf-spim";
 	sck-pin = <6>;
 	mosi-pin = <26>;
+	miso-pin = <10>;
 
 	cs-gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;
 
