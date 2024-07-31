@@ -1,0 +1,6 @@
+if SHIELD_MINIKEY6
+
+config ZMK_KEYBOARD_NAME
+    default "MiniKey-6"
+
+endif
