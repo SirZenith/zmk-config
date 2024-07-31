@@ -13,10 +13,6 @@
 #
 ---
 include:
-  - board: nrfmicro_13
-    shield: corne_left
-  - board: nrfmicro_13
-    shield: corne_right
   - board: corneish_zen_v2_left
   - board: corneish_zen_v2_right
   - board: seeeduino_xiao
