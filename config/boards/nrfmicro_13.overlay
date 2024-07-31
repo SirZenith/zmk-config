@@ -1,28 +1,28 @@
 &i2c0 {
-	status = "disabled";
+    status = "disabled";
 };
 
 &spi0 {
-	status = "okay";
-	compatible = "nordic,nrf-spim";
-	sck-pin = <6>;
-	mosi-pin = <26>;
-	miso-pin = <10>;
+    status = "okay";
+    compatible = "nordic,nrf-spim";
+    sck-pin = <6>;
+    mosi-pin = <26>;
+    miso-pin = <10>;
 
-	cs-gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&gpio0 8 GPIO_ACTIVE_LOW>;
 
-	ssd16xxfb@0 {
-		compatible = "gooddisplay,il0323";
-		label = "DISPLAY";
-		spi-max-frequency = <4000000>;
-		reg = <0>;
-		width = <80>;
-		height = <128>;
-		dc-gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
-		reset-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
-		busy-gpios = <&gpio0 28 GPIO_ACTIVE_LOW>;
-		cdi = <0xd2>;
-		tcon = <0x22>;
-		pwr = [03 00 26 26];
-	};
+    ssd16xxfb@0 {
+        compatible = "gooddisplay,il0323";
+        label = "DISPLAY";
+        spi-max-frequency = <4000000>;
+        reg = <0>;
+        width = <80>;
+        height = <128>;
+        dc-gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+        reset-gpios = <&gpio0 7 GPIO_ACTIVE_LOW>;
+        busy-gpios = <&gpio0 28 GPIO_ACTIVE_LOW>;
+        cdi = <0xd2>;
+        tcon = <0x22>;
+        pwr = [03 00 26 26];
+    };
 };
