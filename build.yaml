@@ -22,3 +22,5 @@ include:
   - board: corneish_zen_v2_right
   - board: seeeduino_xiao
     shield: minikey6
+  - board: seeeduino_xiao_ble
+    shield: minikey6
