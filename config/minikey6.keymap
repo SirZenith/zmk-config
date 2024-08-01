@@ -40,43 +40,41 @@
         };
 
         // layer 1
-        layer1 {
+        osu {
             bindings = <
-&kp F1  &none  &mo 2
-&none  &none  &none
+&kp ESC   &kp ENTER  &mo 2
+&kp LCTRL  &kp D  &kp F
             >;
         };
 
         // layer 2
         layer2 {
             bindings = <
-&kp F2  &none  &trans
+&none  &kp BSPC  &trans
 &none  &none  &none
             >;
         };
 
         // layer 3
-        osu {
+        layer3 {
             bindings = <
-&kp ESC   &kp ENTER  &mo 4
-&kp LCTRL  &kp D  &kp F
+&none  &kp C_VOL_UP  &mo 4
+&prev_desktop  &kp C_VOL_DN  &next_desktop
             >;
         };
 
         // layer 4
         layer4 {
             bindings = <
-&none  &kp BSPC  &trans
+&kp F4  &none  &trans
 &none  &none  &none
             >;
         };
 
         // layer 5
         layer5 {
-            bindings = <
-&none  &kp C_VOL_UP  &mo 6
-&prev_desktop  &kp C_VOL_DN  &next_desktop
-            >;
+&kp F5  &none  &mo 6
+&none  &none  &none
         };
 
         // layer 6
