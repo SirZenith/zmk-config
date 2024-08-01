@@ -73,8 +73,10 @@
 
         // layer 5
         layer5 {
+            bindings = <
 &kp F5  &none  &mo 6
 &none  &none  &none
+            >;
         };
 
         // layer 6
