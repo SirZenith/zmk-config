@@ -3,6 +3,22 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    macros {
+        prev_desktop: prev_desktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(LEFT))>;
+            label = "PREV_DESKTOP";
+        };
+
+        next_desktop: next_desktop {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(LG(RIGHT))>;
+            label = "NEXT_DESKTOP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -13,17 +29,17 @@
             >;
         };
 
-        layer_1 {
+        sysconf {
             bindings = <
-&to 2   &kp BACKSPACE  &trans
-&sys_reset  &out OUT_USB         &out OUT_BLE
+&to 2       &kp BACKSPACE  &trans
+&sys_reset  &out OUT_USB   &out OUT_BLE
             >;
         };
 
-        layer_2 {
+        media {
             bindings = <
-&trans  &trans  &mo 3
-&trans  &trans  &kp N2
+&trans         &kp C_VOL_UP       &mo 3
+&prev_desktop  &kp C_VOLUME_DOWN  &next_desktop
             >;
         };
 
