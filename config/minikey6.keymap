@@ -22,110 +22,115 @@
     combos {
         compatible = "zmk,combos";
 
-        next_layer_1 {
-            bindings = <&to 2>;
-            key-positions = <0 1>;
-            layers = <1>;
-        };
-
-        prev_layer_1 {
-            bindings = <&to 6>;
-            key-positions = <1 3>;
-            layers = <1>;
-        };
-
-        next_layer_3 {
-            bindings = <&to 4>;
-            key-positions = <0 1>;
-            layers = <3>;
-        };
-
-        prev_layer_3 {
-            bindings = <&to 0>;
-            key-positions = <1 3>;
-            layers = <3>;
-        };
-
-        next_layer_5 {
-            bindings = <&to 6>;
-            key-positions = <0 1>;
-            layers = <5>;
-        };
-
-        prev_layer_5 {
-            bindings = <&to 2>;
-            key-positions = <1 3>;
-            layers = <5>;
-        };
-
-        next_layer_7 {
+        layer_picker {
             bindings = <&to 0>;
             key-positions = <0 1>;
-            layers = <7>;
-        };
-
-        perv_layer_7 {
-            bindings = <&to 4>;
-            key-positions = <1 3>;
-            layers = <7>;
+            layers = <2 4 6 8 10 12>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        osu {
+        layer0 {
             bindings = <
-&kp ESC    &kp ENTER  &mo 1
-&kp LCTRL  &kp D      &kp F
+&to 1  &to 3  &to 5
+&to 7  &to 9  &to 11
             >;
         };
 
-        layer1 {
+        // layer 1
+        sys-config {
             bindings = <
-&kp N1       &kp BACKSPACE  &none
+&none       &none  &mo 2
 &sys_reset  &out OUT_USB   &out OUT_BLE
             >;
         };
 
+        // layer 2
         layer2 {
             bindings = <
-&kp N2         &kp C_VOL_UP       &mo 3
-&prev_desktop  &kp C_VOLUME_DOWN  &next_desktop
-            >;
-        };
-
-        layer3 {
-            bindings = <
-&kp N3   &none  &none
+&kp F2  &none  &trans
 &none  &none  &none
             >;
         };
 
+        // layer 3
+        osu {
+            bindings = <
+&kp ESC   &kp ENTER  &mo 4
+&kp LCTRL  &kp D  &kp F
+            >;
+        };
+
+        // layer 4
         layer4 {
             bindings = <
-&kp N4  &none  &mo 5
+&none  &kp BSPC  &trans
 &none  &none  &none
             >;
         };
 
+        // layer 5
         layer5 {
             bindings = <
-&kp N5   &none  &none
-&none  &none  &none
+&none  &kp C_VOL_UP  &mo 6
+&prev_desktop  &kp C_VOL_DN  &next_desktop
             >;
         };
 
+        // layer 6
         layer6 {
             bindings = <
-&kp N6  &none  &mo 7
+&kp F6  &none  &trans
 &none  &none  &none
             >;
         };
 
+        // layer 7
         layer7 {
             bindings = <
-&kp N7   &none  &none
+&kp F7  &none  &mo 8
+&none  &none  &none
+            >;
+        };
+
+        // layer 8
+        layer8 {
+            bindings = <
+&kp F8  &none  &trans
+&none  &none  &none
+            >;
+        };
+
+        // layer 9
+        layer9 {
+            bindings = <
+&kp F9  &none  &mo 10
+&none  &none  &none
+            >;
+        };
+
+        // layer 10
+        layer10 {
+            bindings = <
+&kp F10  &none  &trans
+&none  &none  &none
+            >;
+        };
+
+        // layer 11
+        layer11 {
+            bindings = <
+&kp F11  &none  &mo 12
+&none  &none  &none
+            >;
+        };
+
+        // layer 12
+        layer12 {
+            bindings = <
+&kp F12  &none  &trans
 &none  &none  &none
             >;
         };
